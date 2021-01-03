@@ -12,3 +12,6 @@ serverless.yml contains configurations for AWS API Gateway. Modify it as needed.
 
 To deploy app, on AWS Lambda run <code>serverless deploy</code> 
 Done..! It will create AWS resources as needed and if everything goes well, you will get API endpoint on the console screen. 
+
+If request is sent on AWS_ENDPOINT.com, then it will return details about origin's IP address.
+If request is sent on AWS_ENDPOINT.com/IP_ADDRESS (ie. xxxxx123-api.us-east-2.amazonaws.com/123.45.67.78) then it will return details about IP address mentioned in the request.
